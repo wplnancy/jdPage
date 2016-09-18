@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的京东页面</title>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/login.css"/>
+    <link rel="stylesheet" href="styles/animate.css"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/jq.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/jquery.singlePageNav.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+
+
+
+</head>
+<body>
+<!--京东的头部导航开始-->
+<div class="header" id="nav">
+   <div class="w">
+       <!--导航左边开始-->
+       <div class="fl">
+           <div class="dropdown" id="ttbar-mycity">
+               <div class="dd-spacer"></div>
+               <div class="dt" id="citySend">送至:&nbsp;&nbsp;<span id="cityName">北京</span>
+                   <i id="arrow"><s>◇</s></i>
+               </div>
+               <div class="dd dropdown-layer public" id="dropdown-layer">
+                   <div class="dd-dropdownCity" id="dropdownCity">
+                       <div><a href="" class="hasSeleted">北京</a></div>
+                       <div><a href="">北京</a></div>
+                       <div><a href="">上海</a></div>
+                       <div><a href="">天津</a></div>
+                       <div><a href="">重庆</a></div>
+                       <div><a href="">河北</a></div>
+                       <div><a href="">山西</a></div>
+                       <div><a href="">河南</a></div>
+                       <div><a href="">吉林</a></div>
+                       <div><a href="">黑龙江</a></div>
+                       <div><a href="">内蒙古</a></div>
+                       <div><a href="">江苏</a></div>
+                       <div><a href="">山东</a></div>
+                       <div><a href="">安徽</a></div>
+                       <div><a href="">浙江</a></div>
+                       <div><a href="">福建</a></div>
+                       <div><a href="">湖北</a></div>
+                       <div><a href="">湖南</a></div>
+                       <div><a href="">广东</a></div>
+                       <div><a href="">广西</a></div>
+                       <div><a href="">江西</a></div>
+                       <div><a href="">四川</a></div>
+                       <div><a href="">海南</a></div>
+                       <div><a href="">贵州</a></div>
+                       <div><a href="">云南</a></div>
+                       <div><a href="">西藏</a></div>
+                       <div><a href="">陕西</a></div>
+                       <div><a href="">甘肃</a></div>
+                       <div><a href="">青海</a></div>
+                       <div><a href="">宁夏</a></div>
+                       <div><a href="">新疆</a></div>
+                       <div><a href="">台湾</a></div>
+                       <div><a href="">香港</a></div>
+                       <div><a href="">澳门</a></div>
+                       <div><a href="">钓鱼岛</a></div>
+                       <div><a href="">海外</a></div>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+       <!--导航右部分开始-->
+       <div class="fr">
+           <ul>
+               <li>
+                   <a href="login.html">
+                   您好，请登录</a>
+                   &nbsp;&nbsp;
+                   <a href="#" class="col-red">免费注册</a>
+               </li>
+               <li class="line"></li>
+               <li><a href="">我的订单</a></li>
+               <li class="line"></li>
+               <li class="fore dropdown" id="myjd">
+                   <div class="dd-spacer"></div>
+                   <a href="" id="top-title">
+                     我的京东
+                   </a>
+                   <i><s>◇</s></i>
+                   <div class="dropdownlayer wdjd-dropdownContent public" id="dropdownlayer">
+                        <div class="img-mid">
+                        </div>
+                        <div class="info">
+                           <p>您好，请登录</p>
+                            <a href="#">优惠卷</a>
+                            <span class="separate">|</span>
+                           <a href="#">消息</a>
+                        </div>
+                       <div class="clearfix"></div>
+                        <div class="info-details">
+                           <div><a href="#">待处理的订单</a></div>
+                           <div><a href="#">我的关注</a></div>
+                           <div><a href="#">咨询回复</a></div>
+                           <div><a href="#">我的京豆</a></div>
+                           <div><a href="#">降价商品</a></div>
+                           <div><a href="#">我的理财</a></div>
+                           <div><a href="#">返修退换货</a></div>
+                           <div><a href="#">京东白条</a></div>
+                       </div>
+                   </div>
+               </li>
+               <li class="line"></li>
+               <li><a href="">京东会员</a></li>
+               <li class="line"></li>
+               <li><a href="">企业采购</a></li>
+               <li class="line"></li>
+               <li class="fore jd-tel" id="jdsj">
+                   <div class="dd-spacer"></div>
+                   <em class="tel" id="tel"></em>
+                   <a href="">
+                       手机京东
+                   </a>
+                   <i><s>◇</s></i>
+               </li>
+               <li class="line"></li>
+               <li class="fore dropdown" id="attention">
+                   <div class="dd-spacer"></div>
+                   <a href="">
+                       关注京东
+                   </a>
+                   <i><s>◇</s></i>
+                   <div class="barcode dropdownlayer public">
+                       <img src="images/ewm.jpg" alt=""/>
+                   </div>
+               </li>
+               <li class="line"></li>
+               <li class="fore dropdown" id="jd-service">
+                   <div class="dd-spacer"></div>
+                   <a href="">
+                       京东客服
+                   </a>
+                   <i><s>◇</s></i>
+                   <div class="dropdownlayer jdkf-dropdownContent public">
+                          <div class="wrapper-jdkf">
+                              <div class="jdkf-top clearfix">
+                              <h3>客户</h3>
+                              <div><a href="">帮助中心</a></div>
+                              <div><a href="">客户服务</a></div>
+                              <div><a href="">在线服务</a></div>
+                              <div><a href="">意见建议</a></div>
+                              <div><a href="">电话客服</a></div>
+                              <div><a href="">客服邮箱</a></div>
+                          </div>
+                      </div>
+                       <div class="jdkf-down">
+                           <h3>商户</h3>
+                           <div><a href="">京东商学院</a></div>
+                           <div><a href="">京东商学院</a></div>
+                       </div>
+                   </div>
+               </li>
+               <li class="line"></li>
+               <li class="fore dropdown">
+                   <div class="dd-spacer"></div>
+                   <a href="">网站导航</a>
+                   <i><s>◇</s></i>
+                   <div class="sitemap dropdownlayer public">
+                       <div class="site-cont site-hot">
+                           <h2>热点推荐<span>Hot</span></h2>
+                           <ul class="site-list">
+                               <li><a href="">天猫超市</a></li>
+                               <li><a href="">喵先生</a></li>
+                               <li><a href="">科技新品<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">女装新品</a></li>
+                               <li><a href="">库玩街<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">内衣新品<div class="sitemap-icon sitemap-icon-new"></div></a></li>
+                               <li><a href="">试美妆</a></li>
+                               <li><a href="">运动新品</a></li>
+                               <li><a href="">时尚先生<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">精明妈咪<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">吃乐会</a></li>
+                               <li><a href="">企业采购</a></li>
+                               <li><a href="">会员积分</a></li>
+                               <li><a href="">天猫国际</a></li>
+                           </ul>
+
+                       </div>
+                       <div class="site-cont site-market">
+
+                           <h2>行业市场<span>Market</span></h2>
+                           <ul class="site-list">
+                               <li><a href="">美妆<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">电器</a></li>
+                               <li><a href="">女装</a></li>
+                               <li><a href="">女鞋<div class="sitemap-icon sitemap-icon-new"></div></a></li>
+                               <li><a href="">男鞋</a></li>
+                               <li><a href="">内衣<div class="sitemap-icon sitemap-icon-new"></div></a></li>
+                               <li><a href="">男装</a></li>
+                               <li><a href="">箱包</a></li>
+                               <li><a href="">运动</a></li>
+                               <li><a href="">母婴<div class="sitemap-icon sitemap-icon-hot"></div></a></li>
+                               <li><a href="">家装</a></li>
+                               <li><a href="">医药</a></li>
+                               <li><a href="">食品</a></li>
+                               <li><a href="">配饰</a></li>
+                               <li><a href="">汽车</a></li>
+
+                           </ul>
+                       </div>
+                       <div class="site-cont site-brand">
+                           <h2>品牌风尚<span>Brand</span></h2>
+                           <ul class="site-list">
+                               <li><a href="">尚天猫</a></li>
+                               <li><a href="">大牌街</a></li>
+                               <li><a href="">朝牌街</a></li>
+                               <li><a href="">天猫原创</a></li>
+                               <li><a href="">什么牌子不好</a></li>
+                           </ul>
+                       </div>
+                       <div class="site-cont site-help">
+                           <h2>服务指南<span>help</span></h2>
+                           <ul class="site-list">
+                               <li><a href="">帮助中心</a></li>
+                               <li><a href="">品质保障</a></li>
+                               <li><a href="">特色服务</a></li>
+                               <li><a href="">7天退换货</a></li>
+                           </ul>
+
+                       </div>
+                   </div>
+               </li>
+
+           </ul>
+       </div>
+   </div>
+</div>
+<!--topbanner部分-->
+<div class="topbanner">
+    <div class="w tp" id="tpbanner">
+        <img src="images/topbanner.jpg" alt=""/>
+        <a href="#" class="close-banner" id="close"></a>
+    </div>
+</div>
+<!--导航搜索部分开始-->
+<div class="w clearfix">
+    <div class="logo">
+        <a href="http://www.jd.com" target="_blank" class="jd-a" title="叮咚">京东</a>
+        <div class="db11">
+            <a href="#"><img src="images/dong.gif" alt=""/></a>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" name="" id="txt"/>
+        <label for="txt" id="message">必败的国际大牌</label>
+        <button>搜索</button>
+    </div>
+    <div class="car">
+        <a href="#">俺的购物车</a>
+        <span class="icon1"></span>
+        <span class="icon2">></span>
+        <span class="icon3">0</span>
+    </div>
+    <div class="hotwords">
+        <a href="#" class="col-red">11月11天</a>
+        <a href="#">11.11秒杀</a>
+        <a href="#">买2免1</a>
+        <a href="#">Note5 黑</a>
+        <a href="#">12期免息</a>
+        <a href="#">智能科技</a>
+        <a href="#">清仓</a>
+        <a href="#">国际服饰</a>
+        <a href="#">优惠券</a>
+    </div>
+</div>
+<!--内容区域开始-->
+<div class="jd-nav">
+    <div class="w">
+        <div class="pulldown">
+            <div class="dt">
+                <a href="#">全部商品分类</a>
+            </div>
+            <div class="dd">
+                <div class="items">
+                    <h3>家用电器</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>手机、数码、京东通讯</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>电脑、办公</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>家居、家具、家装、厨具</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>男装、女装、童装、内衣</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>个护化妆、清洁用品、宠物</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>鞋靴、箱包、珠宝、奢侈品</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>运动户外、钟表</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>汽车、汽车用品</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>母婴、玩具乐器</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>食品、酒类、生鲜、特产</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>医药保健</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>图书、音像、电子书</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>彩票、旅行、充值、票务</h3>
+                    <span>></span>
+                </div>
+                <div class="items">
+                    <h3>理财、众筹、白条、保险</h3>
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+        <div class="navitems">
+            <ul>
+                <li><a href="#">服装城</a></li>
+                <li><a href="#">美妆馆</a></li>
+                <li><a href="#">超市</a></li>
+                <li class="new"><a href="#">全球购</a></li>
+                <li><a href="#">闪购</a></li>
+                <li><a href="#">团购</a></li>
+                <li><a href="#">拍卖</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">智能</a></li>
+            </ul>
+        </div>
+        <div class="bike">
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+<!--大banner部分-->
+<div class="banner604">
+    <a href="">
+       
+    </a>
+</div>
+<div class="w main clearfix">
+    <!--轮播图部分-->
+    <div class="slider" id="slider">
+        <ul class="scroll" id="scroll">
+            <li><a href="#"><img src="images/11.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/22.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/33.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/44.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/55.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/66.jpg" alt=""/></a></li>
+        </ul>
+        <div class="arrowbtn">
+            <div class="arrow-l">&lt;</div>
+            <div class="arrow-r">&gt;</div>
+        </div>
+    </div>
+    <div class="news">
+        <!--抽取相同的模块来方便写样式-->
+        <div class="jd-news">
+            <div class="dt">
+                <h3>京东快报</h3>
+                <a href="#">更多</a>
+
+            </div>
+            <div class="dd">
+                <ul>
+                    <li><a href=""><span>[特惠]</span>中秋月饼爆款礼盒，京喜直降</a></li>
+                    <li><a href=""><span>[公告]</span>浙江地区订单配送可能延迟</a></li>
+                    <li><a href=""><span>[特惠]</span>中秋福利 买京东E卡反65元</a></li>
+                    <li><a href=""><span>[公告]</span>贵州扶贫馆 高原香茗邀你赏</a></li>
+                    <li><a href=""><span>[特惠]</span>家电五折秒杀哦！</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lifeService">
+            <div class="dt">
+                <h3>生活服务</h3>
+            </div>
+            <div class="dd" id="iconsprite">
+                <ul>
+                    <li class="lifeService-icon">
+                        <a href="">
+                            <i></i>
+                            <span>话费</span>
+                        </a>
+                    </li>
+                    <li class="lifeService-icon">
+                        <a href="">
+                            <i></i>
+                            <span>机票</span>
+                        </a>
+                    </li>
+                    <li class="lifeService-icon">
+                        <a href="" class="song">
+                            <i></i>
+                            <span>电影票</span>
+                        </a>
+                    </li>
+                    <li class="lifeService-icon">
+                        <a href="">
+                            <i></i>
+                            <span>游戏</span>
+                        </a>
+                    </li>
+                    <li class="lifeService-icon">
+                        <a href="" class="mian">
+                            <i></i>
+                            <span>彩票</span>
+                        </a>
+                    </li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>加油卡</span>
+
+                    </a></li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>酒店</span>
+                    </a></li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>火车票</span>
+                    </a></li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>酒店</span>
+                    </a></li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>酒店</span>
+                    </a></li>
+                    <li class="lifeService-icon"><a href="">
+                        <i></i>
+                        <span>酒店</span>
+                    </a></li>
+                    <li class="lifeService-icon">
+                        <a href="">
+                            <i></i>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--双11的某个活动-->
+<div class="w todays clearfix" id="activity">
+    <div class="night">
+        <div class="night-l fl">
+            <img src="images/night.jpg" alt=""/>
+        </div>
+        <div class="night-r">
+            <ul class="scroll-main" id="scroll-main">
+                <li class="slider-panel fore4">
+                    <div class="fore1"><a href=""><img src="images/13.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/14.jpg" alt=""/></a></a></div>
+                    <div class="fore3"><a href=""><img src="images/15.jpg" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/16.jpg" alt=""/></a></div>
+                </li>
+                <li class="slider-panel fore1">
+                    <div class="fore1"><a href=""><img src="images/1.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/2.jpg" alt=""/></a></div>
+                    <div class="fore3"><a href=""><img src="images/3.jpg" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/4.jpg" alt=""/></a></div>
+                </li>
+                <li class="slider-panel fore2">
+                    <div class="fore1"><a href=""><img src="images/5.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/6.jpg" alt=""/></a></div>
+                    <div class="fore3"><a href=""><img src="images/7.jpg" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/8.jpg" alt=""/></a></div>
+                </li>
+                <li class="slider-panel fore3">
+                    <div class="fore1"><a href=""><img src="images/9.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/10.jpg" alt=""/></a></div>
+                    <div class="fore3"><a href=""><img src="images/11.png" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/12.jpg" alt=""/></a></div>
+                </li>
+                <li class="slider-panel fore4">
+                    <div class="fore1"><a href=""><img src="images/13.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/14.jpg" alt=""/></a></div>
+                    <div class="fore3"><a href=""><img src="images/15.jpg" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/16.jpg" alt=""/></a></div>
+                </li>
+                <li class="slider-panel fore1">
+                    <div class="fore1"><a href=""><img src="images/1.jpg" alt=""/></a></div>
+                    <div class="fore2"><a href=""><img src="images/2.jpg" alt=""/></a></div>
+                    <div class="fore3"><a href=""><img src="images/3.jpg" alt=""/></a></div>
+                    <div class="fore4"><a href=""><img src="images/4.jpg" alt=""/></a></div>
+                </li>
+            </ul>
+            <!--左右两个三角的按钮的部分   为了做特效的时候鼠标移上去的时候两个三角都是显示的状态-->
+            <div class="arrowbtn">
+                <div class="arrow-l" id="right-btn">&lt;</div>
+                <div class="arrow-r" id="left-btn">&gt;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--猜你喜欢-->
+<div class="w m" id="guesslike">
+    <div class="mt">
+       <h2>猜你喜欢</h2>
+       <a href="" class="extra">
+           换一批
+       </a>
+   </div>
+    <div class="mc">
+        <ul>
+            <li class="fore1">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p01.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                   <p class="p-name">
+                       <a href="">九阳（Joyoung）料理机绞肉机榨汁机家用婴儿辅食机（榨汁干磨搅拌）JYL-C022E</a>
+                   </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        279.00
+                    </p>
+                </div>
+            </li>
+            <li class="fore2">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p02.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                    <p class="p-name">
+                        <a href="">金士顿(Kingston)骇客神条 Fury系列 DDR3 1600 8GB台式机内存(HX316C10F/8)蓝色</a>
+                    </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        189.00
+                    </p>
+                </div>
+            </li>
+            <li class="fore3">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p03.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                    <p class="p-name">
+                        <a href="">罗技（Logitech）M100r 光电鼠标 （黑色）</a>
+                    </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        49.00
+                    </p>
+                </div>
+            </li>
+            <li class="fore4">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p04.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                    <p class="p-name">
+                        <a href="">苏泊尔（SUPOR)榨汁机料理机TJE06A</a>
+                    </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        118.00
+                    </p>
+                </div>
+            </li>
+            <li class="fore5">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p05.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                    <p class="p-name">
+                        <a href="">【京东超市】法国进口红酒 拉菲传奇波尔多红葡萄酒 750ml（ASC）</a>
+                    </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        99.00
+                    </p>
+                </div>
+            </li>
+            <li class="fore6">
+                <div class="p-img">
+                    <a href=""></a>
+                    <img src="images/like/p06.jpg" alt=""/>
+                </div>
+                <div class="p-info">
+                    <p class="p-name">
+                        <a href="">【京东超市】舒肤佳香皂纯白清香型115gX4（新老包装随机发货）</a>
+                    </p>
+                    <p class="p-price">
+                        <i>￥</i>
+                        20.50
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!--内容区域部分开始-->
+<div class="w special-buy" id="label2">
+    <h2>京东 · 品质生活</h2>
+<div class="hs-content">
+    <div class="has-col1">
+        <a href="" class="has-item">
+            <p class="area-tit">新发现</p>
+            <!--左边子标题-->
+            <div class="sub-tit">
+                <p class="tit">
+                    iPhone  7
+                </p>
+
+                <p class="desc">预约有礼</p>
+                <p class="promotion">白条免息</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/top01.jpg" alt=""/>
+        </a>
+        <a href="" class="has-item-small">
+            <div class="sub-tit">
+                <p class="tit"> 领劵中心</p>
+                <p class="desc">床品劵</p>
+                <p class="promotion">立减60</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/b01.jpg" alt=""/>
+        </a>
+        <a href="" class="has-item-small">
+            <div class="sub-tit">
+                <p class="tit"> 限时秒杀</p>
+                <p class="desc">好货连连</p>
+                <p class="promotion">精彩秒杀不断</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/b02.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="has-col2">
+        <a href="" class="has-item">
+            <p class="area-tit">好东西</p>
+            <!--左边子标题-->
+            <div class="sub-tit">
+                <p class="tit">
+                   达人推荐
+                </p>
+                <p class="desc">机喜不断</p>
+                <p class="promotion">魅族新品抢</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/top02.jpg" alt=""/>
+        </a>
+        <a href="" class="has-item-small">
+            <div class="sub-tit">
+                <p class="tit">头条资讯</p>
+
+                <p class="desc">如何玩mini70</p>
+                <p class="promotion">风趣幽默</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/b03.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="has-col3">
+        <a href="" class="has-item">
+            <p class="area-tit">品牌街</p>
+            <!--左边子标题-->
+            <div class="sub-tit">
+                <p class="tit"> 国际大牌</p>
+
+                <p class="desc">ADIDAS秋上新</p>
+                <p class="promotion">经典款式至4折</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/top03.jpg" alt=""/>
+        </a>
+        <a href="" class="has-item-small">
+            <div class="sub-tit">
+                <p class="tit"> 国际大牌</p>
+                <p class="desc">ADIDAS秋上新</p>
+                <p class="promotion">经典款式至4折</p>
+            </div>
+            <img src="images/b04.jpg" alt=""/>
+        </a>
+        <a href="" class="has-item-small">
+            <div class="sub-tit">
+                <p class="tit">本周特卖</p>
+                <p class="desc">大牌折扣</p>
+                <p class="promotion">每周上新</p>
+            </div>
+            <!--右边图片-->
+            <img src="images/b05.png" alt=""/>
+        </a>
+    </div>
+    <div class="hs-brands">
+        <div class="brands-left">
+            <ul>
+                <li><a href=""><img src="images/pinpai/pinpai01.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai02.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai03.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai04.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai05.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai06.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai07.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+        <div class="brands-right">
+            <ul>
+                <li><a href=""><img src="images/pinpai/pinpai14.png" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai09.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai10.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai13.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai11.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai12.jpg" alt=""/></a></li>
+                <li><a href=""><img src="images/pinpai/pinpai09.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--产品展示区域-->
+<div class="w">
+    <div class="channel">
+        <div class="channel-column type-1">
+            <div class="clumn-title">
+                <i></i>
+                <span class="text">潮流前沿</span>
+            </div>
+            <a href="">
+                <div class="item-title">
+                    焕新
+                </div>
+                <div class="item-sub-title">
+                    品牌精选新品
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic1.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+            <div class="seprate">
+            </div>
+            <a href="">
+                <div class="item-title">
+                    快时尚
+                </div>
+                <div class="item-sub-title">
+                    你的包包不够用了
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic6.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+
+        </div>
+        <div class="channel-column type-2">
+            <div class="clumn-title">
+                <i></i>
+                <span class="text">手机酷玩</span>
+            </div>
+            <a href="">
+                <div class="item-title">
+                    京东手机官网
+                </div>
+                <div class="item-sub-title">
+                    iPhone 7开启预购
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic2.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+            <div class="seprate">
+            </div>
+            <a href="">
+                <div class="item-title">
+                    酷玩街
+                </div>
+                <div class="item-sub-title">
+                   朝炫创意智能
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic7.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+
+        </div>
+        <div class="channel-column type-3">
+            <div class="clumn-title">
+                <i></i>
+                <span class="text">品质生活</span>
+            </div>
+            <a href="">
+                <div class="item-title">
+                    必抢
+                </div>
+                <div class="item-sub-title">
+                    购物劵翻倍减
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic3.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+            <div class="seprate">
+            </div>
+            <a href="">
+                <div class="item-title">
+                    喵先生
+                </div>
+                <div class="item-sub-title">
+                    全进口好新鲜
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic8.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+
+        </div>
+        <div class="channel-column type-4">
+            <div class="clumn-title">
+                <i></i>
+                <span class="text">国际海购</span>
+            </div>
+            <a href="">
+                <div class="item-title">
+                    识货
+                </div>
+                <div class="item-sub-title">
+                    全球最新最热好货
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic4.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+            <div class="seprate">
+            </div>
+            <a href="">
+                <div class="item-title">
+                    海外直营
+                </div>
+                <div class="item-sub-title">
+                    海外直采特卖
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+                    </div>
+                    <img src="images/kind/pic9.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+        </div>
+        <div class="channel-column type-5">
+            <div class="clumn-title">
+                <i></i>
+                <span class="text">个性推荐</span>
+            </div>
+            <a href="">
+                <div class="item-title">
+                    布置小家
+                </div>
+                <div class="item-sub-title">
+                    格调摆件低价
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+                    </div>
+                    <img src="images/kind/pic5.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+            <div class="seprate">
+            </div>
+            <a href="">
+                <div class="item-title">
+                    疯狂吃货
+                </div>
+                <div class="item-sub-title">
+                    零食9元起
+                </div>
+                <div class="img-con">
+                    <div class="img-mask">
+
+                    </div>
+                    <img src="images/kind/pic10.jpg" alt="" class="product-img"/>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+<!--广告区域-->
+<div class="w">
+    <a href="">
+        <div class="ad">
+            <img src="images/ad.png" alt=""/>
+        </div>
+    </a>
+
+</div>
+
+
+<!--产品楼层的分类的部分-->
+<div class="w" id="label3">
+    <div class="floor-line-con floor-1">
+        <i class="color-mark">
+
+        </i>
+        <div class="floor-name">
+        亲子时光
+        </div>
+        <div class="floor-sub-name">
+            KIDS & BABY
+        </div>
+        <div class="floor-body">
+            <!--左边的banner部分-->
+            <a href="">
+                <div class="big-banner-con">
+                    <img src="images/floor/c1.jpg" alt=""/>
+                    <div class="act-title-ctn">
+                        <a href="">时尚童趣 萌动秋冬></a>
+                    </div>
+                    <div class="title-con">
+                        <div class="title">拥抱阳光</div>
+                        <div class="sub-title">创意儿童服饰</div>
+                        <div class="decoration"></div>
+                    </div>
+                </div>
+            </a>
+            <div class="middle-column-con">
+                <a href="" class="grid">
+                    <div class="title">粉红公主系</div>
+                    <div class="sub-title">小女孩最爱靴子</div>
+                    <img src="images/floor/c2.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">给baby一个安全</div>
+                    <div class="sub-title">环保原木宝宝床</div>
+                    <img src="images/floor/c3.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">做妈妈的准备</div>
+                    <div class="sub-title">孕产知识掌握</div>
+                    <img src="images/floor/c4.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">摇到外婆桥</div>
+                    <div class="sub-title">儿童摇椅系列</div>
+                    <img src="images/floor/c6.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">关爱孩子成长</div>
+                    <div class="sub-title">给TA好的奶粉</div>
+                    <img src="images/floor/c7.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                <div class="title">品牌纸尿裤</div>
+                <div class="sub-title">京东特别装</div>
+                    <img src="images/floor/c8.jpg" alt=""/>
+            </a>
+            </div>
+            <div class="right-column-con">
+                <a href="" class="grid">
+                    <div class="title">陪伴最好的礼物</div>
+                    <div class="sub-title">儿童亲子绘本</div>
+                    <img src="images/floor/r1.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">老少皆宜</div>
+                    <div class="sub-title">正品动漫手办</div>
+                    <img src="images/floor/r2.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">让皮肤有爱护</div>
+                    <div class="sub-title">品牌儿童洗护</div>
+                    <img src="images/floor/r3.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="w" id="label4">
+    <div class="floor-line-con floor-2">
+        <i class="color-mark">
+
+        </i>
+        <div class="floor-name">
+            户外出行
+        </div>
+        <div class="floor-sub-name">
+            OUTDOORS & AUTOMOTIVE
+        </div>
+        <div class="floor-body">
+            <!--左边的banner部分-->
+            <a href="">
+                <div class="big-banner-con">
+                    <img src="images/p1.jpg" alt=""/>
+                    <div class="act-title-ctn">
+                        <a href="">不止五折></a>
+                    </div>
+                    <div class="title-con">
+                        <div class="title">国庆出游季</div>
+                        <div class="sub-title">国庆出游包你满意</div>
+                        <div class="decoration"></div>
+                    </div>
+                </div>
+            </a>
+            <div class="middle-column-con">
+                <a href="" class="grid">
+                    <div class="title">360记录仪</div>
+                    <div class="sub-title">新品首发聚惠</div>
+                    <img src="images/p2.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">国庆出游需要它</div>
+                    <div class="sub-title">冲锋衣低至399</div>
+                    <img src="images/p3.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">骑行正当时</div>
+                    <div class="sub-title">全场四折起</div>
+                    <img src="images/p4.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">360记录仪</div>
+                    <div class="sub-title">新品首发聚惠</div>
+                    <img src="images/p5.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">运动潮搭</div>
+                    <div class="sub-title">全场5折起</div>
+                    <img src="images/p6.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">国庆出游季</div>
+                    <div class="sub-title">免费出游路线限量抢</div>
+                    <img src="images/p7.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="right-column-con">
+                <a href="" class="grid">
+                    <div class="title">加油9.3折起</div>
+                    <div class="sub-title">立省油钱</div>
+                    <img src="images/p8.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">开学出游季</div>
+                    <div class="sub-title">儿童安全座椅1折起</div>
+                    <img src="images/p9.jpg" alt=""/>
+                </a>
+                <a href="" class="grid">
+                    <div class="title">背上我去旅行</div>
+                    <div class="sub-title">国庆出游包你满意</div>
+                    <img src="images/p10.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!--底部广告区域-->
+<div class="w">
+    <div class="footer-banner">
+        <a href=""><img src="images/c1.jpg" alt=""/></a>
+        <a href=""><img src="images/c2.jpg" alt=""/></a>
+        <a href=""><img src="images/c3.jpg" alt=""/></a>
+    </div>
+</div>
+
+
+<!--服装展示-->
+<div class="w brand" id="label5">
+    <div class="mt">
+        <h2>品牌旗舰</h2>
+    </div>
+    <div class="mc">
+        <div class="product-iWrap lin1">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/001.jpg" alt="" />
+                </a>
+                <p class="product-price">￥105.00</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>169笔</em></span>
+
+                    <span>评价<a href="">7</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap lin1">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/002.jpg" alt="" />
+                </a>
+                <p class="product-price">￥89.90</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>255笔</em></span>
+
+                    <span>评价<a href="">3</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap lin1">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/003.jpg" alt="" />
+                </a>
+                <p class="product-price">￥89.88</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>212笔</em></span>
+
+                    <span>评价<a href="">45</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap lin1">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/004.jpg" alt="" />
+                </a>
+                <p class="product-price">￥90.99</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>79笔</em></span>
+
+                    <span>评价<a href="">15</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap lin1 last-one" >
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/005.jpg" alt="" />
+                </a>
+                <p class="product-price">￥69.99</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>78笔</em></span>
+
+                    <span>评价<a href="">18</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap" >
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/006.jpg" alt="" />
+                </a>
+                <p class="product-price">￥195.00</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>169笔</em></span>
+
+                    <span>评价<a href="">7</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/007.jpg" alt="" />
+                </a>
+                <p class="product-price">￥89.90</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>215笔</em></span>
+
+                    <span>评价<a href="">125</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/008.jpg" alt="" />
+                </a>
+                <p class="product-price">￥45.90</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>12笔</em></span>
+
+                    <span>评价<a href="">5</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/009.jpg" alt="" />
+                </a>
+                <p class="product-price">￥335.00</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>2笔</em></span>
+
+                    <span>评价<a href="">1</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-iWrap last-one">
+            <div class="product">
+                <a href="" class="img-show">
+                    <img src="images/close/005.jpg" alt="" />
+                </a>
+                <p class="product-price">￥65.59</p>
+                <p class="product-title">
+                    <a href="">纯棉黑色印花宽松休闲时尚t恤</a></p>
+                <p class="productShop-name">
+                    <a href="">sugarman海外旗舰店</a>
+                </p>
+                <div class="productStatus">
+                    <span>月成交 <em>23笔</em></span>
+
+                    <span>评价<a href="">9</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--左侧边的导航栏-->
+<div id="sidebar" class="wow fadeInLeft" data-wow-duration="1s">
+    <ul>
+        <li><a href="#guesslike">猜你喜欢</a></li>
+        <li><a href="#label2">京东生活</a></li>
+        <li><a href="#label3">亲子时光</a></li>
+        <li><a href="#label4">户外出行</a></li>
+        <li><a href="#label5">品牌旗舰</a></li>
+        <li><a href="#label6">天天特价</a></li>
+    </ul>
+</div>
+<!--右侧边-->
+<div class="rightSide" id="rightSide">
+    <ul id="list">
+        <li data-des="我的关注"><a href=""> <span class="icon-heart"></span></a></li>
+        <li data-des="我的收藏"><a href=""> <span class="icon-star-empty"></span></a></li>
+        <li data-des="浏览记录"><a href=""> <span class="icon-history"></span></a></li>
+        <li data-des="用户反馈"><a href=""> <span class="icon-profile"></span></a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--天天特价区域-->
+<div class="w clearfix" id="label6">
+    <!--天天特价-->
+    <div class="special">
+        <div class="mt">
+            <h2>天天特价</h2>
+        </div>
+        <div class="mc">
+            <ul>
+                <li class="fore1">
+                     <div class="p-img">
+                         <a href=""><img src="images/tejia/d01.jpg" alt=""/></a>
+                     </div>
+                    <div class="p-info">
+                        <div class="p-name">
+                            【买一得三】芊姿国色新款尼龙三件套子母包双肩包斜挎包手拿包零钱包 薰衣草紫色
+                        </div>
+                        <div class="p-price">
+                            ￥59.00
+                        </div>
+                    </div>
+                </li>
+                <li class="fore2">
+                    <div class="p-img">
+                        <a href=""><img src="images/tejia/d02.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name">
+                            <a href="">飞科(FLYCO)毛球修剪器 FR5222充电式剃去毛球器</a>
+                        </div>
+                        <div class="p-price">
+                            <span>￥35.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="fore3">
+                    <div class="p-img">
+                        <a href=""><img src="images/tejia/d03.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name">
+                            <a href="">陌卡洛2016秋冬新款韩版女装时尚一字领修身收腰七分喇叭袖A字连衣裙女9936 粉色  S</a>
+                        </div>
+                        <div class="p-price">
+                            <span>￥115.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="fore4">
+                    <div class="p-img">
+                        <a href=""><img src="images/tejia/d04.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name">
+                            <a href="">陌卡洛2016秋季新款韩版时尚连衣裙女装优雅气质修身蕾丝裙花边V领打底A字连衣裙秋8817 白色 L</a>
+                        </div>
+                        <div class="p-price"><span>￥108.00</span></div>
+                    </div>
+                </li>
+                <li class="fore5">
+                    <div class="p-img">
+                        <a href=""> <img src="images/tejia/d05.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="">美黛香连衣裙2016秋冬季新款韩版女装时尚小香风条纹针织衫女半身裙包臀开叉两件套装女中长款 黑色 均码</a></div>
+                        <div class="p-price"><span>￥115.00</span></div>
+                    </div>
+                </li>
+                <li class="fore6">
+                    <div class="p-img">
+                        <a href=""> <img src="images/tejia/d06.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="">陌卡洛2016秋装新款韩版女装时尚修身波点拼接连衣裙蝴蝶结假两件长袖包臀连衣裙女4676 灰色  XL</a></div>
+                        <div class="p-price"><span>￥106.00</span></div>
+                    </div>
+                </li>
+                <li class="fore7">
+                    <div class="p-img">
+                        <a href=""> <img src="images/tejia/d07.jpg" alt=""/></a>
+                    </div>
+                    <div class="p-info">
+                        <div class="p-name"><a href="">朗科（Netac）U903 16G USB3.0 高速闪存盘</a></div>
+                        <div class="p-price"><span>￥29.00</span></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!--热门晒单-->
+    <div class="share">
+        <div class="mt">
+            <h2>热门晒单</h2>
+        </div>
+        <div class="mc">
+            <div class="swipe" id="swipe">
+                <ul id="sw">
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r1.jpg" alt=""/></a>
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a1.jpg" alt=""/>
+                                <span>李***静</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">便宜划算，好用，京东真的很值得信赖<span class="icon-r">
+”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+“
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r2.jpg" alt=""/> </a>
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a2.jpg" alt=""/>
+                                <span>j***lk</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">还可以，反正写得字黑球球的， <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r3.jpg" alt=""/></a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a3.jpg" alt=""/>
+                                <span>m***lk</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">为快递哥点赞，服务态度太好。试下这个  <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r4.jpg" alt=""/></a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a4.jpg" alt=""/>
+                                <span>芳***芳</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">相当霸气，美爆了。客服态度也是... <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r5.jpg" alt=""/> </a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a5.jpg" alt=""/>
+                                <span>j***po</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">真的好漂亮啊，送给老公的...<span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r1.jpg" alt=""/></a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a1.jpg" alt=""/>
+                                <span>吴***丽</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">便宜划算，好用，京东真的很值得信赖<span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r2.jpg" alt=""/> </a>
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a2.jpg" alt=""/>
+                                <span>j***lk</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">还可以，反正写得字黑球球的， <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r3.jpg" alt=""/></a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a3.jpg" alt=""/>
+                                <span>m***lk</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">为快递哥点赞，服务态度太好。试下这个  <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r4.jpg" alt=""/></a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a4.jpg" alt=""/>
+                                <span>芳***芳</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">相当霸气，美爆了。客服态度也是... <span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-img">
+                            <a href=""><img src="images/renmen/r5.jpg" alt=""/> </a>
+
+                        </div>
+                        <div class="p-info">
+                            <div class="author-info">
+                                <img src="images/renmen/a5.jpg" alt=""/>
+                                <span>j***po</span>
+                            </div>
+                            <div class="p-detail">
+                                <a href="">真的好漂亮啊，送给老公的...<span class="icon-r">
+                                    ”
+                                </span></a>
+                                <span class="detail-arrow">◆</span>
+                                <span class="icon-l">
+                                    “
+                                </span>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--右边分享的栏目-->
+<div class="side-share">
+
+</div>
+<!--右边的图标的作用-->
+    <div class="toTop" id="top">
+
+    </div>
+    <div class="fadeback">
+        <div class="fade-info">
+
+        </div>
+    <span>
+        我要反馈
+    </span>
+    </div>
+
+
+
+
+
+
+
+<!--京东footer-->
+<!--页面底部开始-->
+<div class="jd-footer">
+    <div class="service">  <!--服务模块-->
+        <div class="slogen">
+            <span class="item slogen1">
+                <img src="images/slogen1.png" alt=""/>
+            </span>
+            <span class="item slogen2">
+                <img src="images/slogen2.png" alt=""/>
+            </span>
+            <span class="item slogen3">
+                <img src="images/slogen3.png" alt=""/>
+            </span>
+            <span class="item slogen4">
+                <img src="images/slogen4.png" alt=""/>
+            </span>
+
+        </div>
+        <div class="w shopping clearfix">
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">会员介绍</a></dd>
+                <dd><a href="#">生活旅行/团购</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">大家电</a></dd>
+                <dd><a href="#">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">会员介绍</a></dd>
+                <dd><a href="#">生活旅行/团购</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">大家电</a></dd>
+                <dd><a href="#">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">会员介绍</a></dd>
+                <dd><a href="#">生活旅行/团购</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">大家电</a></dd>
+                <dd><a href="#">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">会员介绍</a></dd>
+                <dd><a href="#">生活旅行/团购</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">大家电</a></dd>
+                <dd><a href="#">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">会员介绍</a></dd>
+                <dd><a href="#">生活旅行/团购</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+                <dd><a href="#">大家电</a></dd>
+                <dd><a href="#">联系客服</a></dd>
+            </dl>
+            <div class="coverage">
+                <div class="dt">京东自营覆盖区县</div>
+                <div class="dd">
+                    <p> 京东已向全国2357个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                    <p class="looklook"><a href="#">查看详情 ></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w againw">
+        <div class="links">
+            <a href="#">关于我们</a>|
+            <a href="#">联系我们</a>|
+            <a href="#">商家入驻</a>|
+            <a href="#">营销中心</a>|
+            <a href="#">手机京东</a>|
+            <a href="#">友情链接</a>|
+            <a href="#">销售联盟</a>|
+            <a href="#">京东社区</a>|
+            <a href="#">京东公益</a>|
+            <a href="#">English Site</a>|
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="copyright">
+            北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号<br />
+            音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号<br />
+            网络文化经营许可证京网文[2014]2148-348号  违法和不良信息举报电话：4006561155  Copyright © 2004-2015  京东JD.com 版权所有<br />
+            京东旗下网站：360TOP  拍拍网  网银在线
+        </div>
+        <div class="message">
+            <a href="#"><img src="images/mess.png" alt=""/></a>
+            <a href="#"><img src="images/mess2.png" alt=""/></a>
+            <a href="#"><img src="images/mess3.png" alt=""/></a>
+            <a href="#"><img src="images/mess4.png" alt=""/></a>
+            <a href="#"><img src="images/mess5.png" alt=""/></a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
